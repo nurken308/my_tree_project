@@ -61,3 +61,7 @@ elements: An array of tree nodes fetched from an API.
 Methods
 fetchData: Fetches tree data from an API.
 addDepth: Recursively adds depth information to tree nodes based on their parent-child relationships.
+
+<img width="533" alt="image" src="https://github.com/user-attachments/assets/db8d4fb5-32d0-48e2-8669-cd4ab0a511e8">
+<img width="1440" alt="Снимок экрана 2024-07-14 в 18 32 24" src="https://github.com/user-attachments/assets/f39e6a31-4498-4ff4-84f8-6e19e180a43e">
+
