@@ -1,33 +1,22 @@
-# my_tree_project
+Components
+TreeComponent.vue
+TreeComponent is the main component that renders the tree structure.
 
-This template should help get you started developing with Vue 3 in Vite.
+Props
+elements (Array): Array of tree nodes.
+isRoot (Boolean, default: true): Indicates if the component is the root component.
+Methods
+toggle: Toggles the expansion state of a tree node.
+isExpanded: Checks if a tree node is expanded.
+getChildren: Gets the child nodes of a given parent node.
+hasChildren: Checks if a tree node has child nodes.
+getBackgroundColor: Returns the background color of a tree node based on its depth.
+rerenderTree: Rerenders the tree while preserving the state of expanded nodes.
+App.vue
+The root component that includes the TreeComponent.
 
-## Recommended IDE Setup
-
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
-
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
+Data
+elements: An array of tree nodes fetched from an API.
+Methods
+fetchData: Fetches tree data from an API.
+addDepth: Recursively adds depth information to tree nodes based on their parent-child relationships.
